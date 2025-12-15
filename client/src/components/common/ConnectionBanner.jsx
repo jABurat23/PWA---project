@@ -22,7 +22,7 @@ const ConnectionBanner = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/health', {
+      const response = await fetch('https://pwa-project-cl0c.onrender.com/health', {
         method: 'GET',
         signal: AbortSignal.timeout(5000) // 5 second timeout
       });

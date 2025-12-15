@@ -16,7 +16,7 @@ export const useBackendHealth = () => {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-      const response = await fetch('http://localhost:5000/health', {
+      const response = await fetch('https://pwa-project-cl0c.onrender.com/health', {
         signal: controller.signal
       });
 
